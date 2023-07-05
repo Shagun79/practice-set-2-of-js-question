@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <h2 > Question: Write a JavaScript program to check whether a given      
+         string contains an equal number of p's and t's.</h2>
+       
+    <input type="text" id="userinput" />
+    <button onclick="equal()">Click Here</button>
+    <h2 id="output"></h2>
+
+    <script>
+      function equal() {
+        let value = document.getElementById("userinput").value;
+            let p=0;
+            let t=0;
+        for (i = 0; i < value.length; i++){
+            if (value[i]==="p"){
+                  p++;
+                   
+            }
+            else if(value[i]==="t"){
+                t++;
+            }
+              
+             
+
+        }
+          console.log(p);
+           console.log(t);
+          if( p==t){ 
+
+              document.getElementById('output').innerHTML= "Number of P and T are equal";
+
+          }
+            else{
+                document.getElementById('output').innerHTML= "Number of P and T are not equal";
+
+            }
+       
+      }
+    </script>
+  </body>
+</html>

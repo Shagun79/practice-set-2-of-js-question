@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>practice set</title>
+  </head>
+  <body>
+    <h2>
+      Question: Write a JavaScript program to check a pair of numbers and return
+      true if one of the numbers is 50 or if their sum is 50.
+    </h2>
+    <input type="number" id="input1" />
+    <input type="number" id="input2" />
+    <button onclick="check()">Submit</button>
+    <h2 id="output"></h2>
+
+    <script>
+
+      function check() {
+        let userinput =  Number( document.getElementById("input1").value); 
+    
+        let userinput2 = Number( document.getElementById("input2").value);
+       
+        console.log( userinput+ userinput2);   
+
+        if (userinput == 50 || userinput2 == 50) {
+          document.getElementById("output").innerHTML = "true";
+        } else if ((userinput + userinput2) == 50) {
+          document.getElementById("output").innerHTML = "true";
+        } else {
+          document.getElementById("output").innerHTML = "false";
+        }
+      }
+    </script>
+  </body>
+</html>

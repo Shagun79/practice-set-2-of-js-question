@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>practice</title>
+      </head>
+      <body>
+        <h2>
+          Question: Write a JavaScript program to create another string by
+          adding "Py" in front of a given string. If the given string begins
+          with "Py" return the original string.
+        </h2>
+
+        <input type="text" id="userstring" />
+        <button onclick="check()">Submit</button>
+        <h2 id="output"></h2>
+        <script>
+          function check() {
+            let string = document.getElementById("userstring").value;
+            if (string[0] == "p" && string[1] == "y") {
+              document.getElementById("output").innerHTML = string;
+            }
+            let string2 = "py" + string;
+
+            document.getElementById("output").innerHTML = string2;
+          
+          }
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

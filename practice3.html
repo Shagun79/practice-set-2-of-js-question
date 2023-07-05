@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="usercity" />
+
+    <button onclick="check()">SUBMIT</button>
+    <h2 id="output"></h2>
+    <script>
+      function check() {
+        let value = document.getElementById("usercity").value;
+
+
+        for (i = 0; i < value.length; i++) {
+          if (value[0] == "L" && value[1] == "o" && value[2] == "s") {
+            document.getElementById("output").innerHTML = value;
+          } else if (value[0] == "N" && value[1] == "e" && value[2] == "w") {
+            document.getElementById("output").innerHTML = value;
+          } else {
+            document.getElementById("output").innerHTML = "try again";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
