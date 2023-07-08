@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>
+      Question: Write a JavaScript program to check whether a given positive
+      number is a multiple of 3 or 7.
+      <input type="number" id="userinput" />
+      <button onclick="check()">Click to get</button>
+    </h2>
+    <script>
+      function check() {
+        let value = document.getElementById("userinput").value;
+        if (value > 0) {
+          if (value % 3 == 0  && value % 7 == 0) {
+            console.log("yes it is multiple of 3 and 7");
+          }
+           else{
+             console.log("no it is not the multiple of 3 and 7");
+           }
+
+        }
+      }
+    </script>
+  </body>
+</html>

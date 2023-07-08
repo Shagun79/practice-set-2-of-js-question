@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-      <h2>Question: Write a JavaScript program to remove a character at the  
-        specified position in a given string and return the modified string.</h2>
-         <input type="text" id="userstring">    <input type="number" name="" id="position">
-          <button onclick="check()"> submit</button>
-           <h2></h2>
-         <script>
-       function check() {
-          let value= document.getElementById('userstring').value;
-          let position = document.getElementById('position').value;
-           console.log(position);
-             let emptystring = value[position] = " ";
-                          console.log(emptystring);
-        letnewstring= value + emptystring;
-            
-       }
-         </script>
-</body>
+  </head>
+  <body>
+    <h2>
+      Question: Write a JavaScript program to remove a character at the
+      specified position in a given string and return the modified string.
+    </h2>
+    <input type="text" id="userstring" />
+    <input type="number" name="" id="position" />
+    <button onclick="check()">submit</button>
+    <h2></h2>
+    <script>
+      function check() {
+        let value = document.getElementById("userstring").value;
+        let position = document.getElementById("position").value;
+        console.log(position);
+        let finalstring = "";
+        for (i = 0; i < value.length; i++) {
+          if (i == position) {
+            continue;
+          }
+
+          finalstring = finalstring + value[i];
+        }
+        console.log(finalstring);
+      }
+    </script>
+  </body>
 </html>

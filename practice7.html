@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>
+      Question: Write a JavaScript program to create a new string from a given
+      string by changing the position of the first and last characters.
+    </h2>
+
+    <input type="text" name="" id="userstring" />
+    <button onclick="check()">SUBMIT</button>
+
+    <script>
+      function check() {
+        let string = document.getElementById("userstring").value;
+                  newstring= string[string.length-1] +  string.substring(1, string.length-1) +  string[0];
+                    
+       console.log(newstring);
+        }
+    
+    </script>
+  </body>
+</html>
